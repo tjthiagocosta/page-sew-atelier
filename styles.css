@@ -23,34 +23,37 @@ body {
 }
 
 .container {
+    display: flex;
     max-width: 80%;
     margin: 0 auto;
+    justify-content: space-between;
+
+}
+
+
+
+
+.container .sobre {
+    margin-top: 30px;
 }
 
 .logotipo {
-    height: 60px;
+    height: 70px;
     margin-top: 5px;
-    margin-left: 30px;
+    margin-left: 60px;
 
 }
 
-h1 {
-    padding: 1em 0;
-}
-
-p {
-    margin: 1em 0;
-}
 
 .page {
     background: #F8F5EE;
-    color: #2F4A52#121d20;
+    color: #203339;
     min-height: 100%;
 }
 
 .navbar {
     display: flex;
-    height: 70px;
+    height: 80px;
     background-color: #2F4A52;
     justify-content: space-between;
 }
@@ -58,17 +61,122 @@ p {
 .nav-links {
     display: flex;
     align-items: center;
+
     margin-right: 150px;
     justify-content: space-between;
     width: 400px;
+}
+
+.hero {
+    width: 550px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 100%;
 
 }
+
+.sobre {
+    margin-left: 50px;
+}
+
+.sobre h2,
+#contato h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+
+
+.sobre p {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+#contato .container {
+    display: block;
+}
+
+.formas-contato {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formas-contato h3 {
+    margin-bottom: 15px;
+}
+
+
+form input,
+form textarea {
+    background-color: #F8F5EE;
+}
+
+::placeholder {
+    color: #203339;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+    font-family: Satisfy;
+    border-radius: 5px;
+    border: 2px solid #EDD8CE;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: #3c606b;
+}
+
+form textarea {
+    resize: none;
+    height: 80px;
+}
+
+form button {
+    background-color: #2F4A52;
+    color: #F8F5EE;
+    border: 2px solid #F8F5EE;
+}
+
+form button:hover {
+    background-color: #3c606b;
+    cursor: pointer;
+}
+
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-links li a {
+    text-decoration: none;
+
+}
+
+footer {
+    margin-top: 30px;
+    display: flex;
+    height: 30px;
+    background-color: #2F4A52;
+    color: #F8F5EE;
+    align-items: center;
+}
+
+
 
 header nav li {
     display: inline;
     justify-content: space-between;
-    font-family: sans-serif;
-    font-size: 25px;
+    align-items: center;
+    font-size: 30px;
 }
 
 header nav li a {
@@ -82,7 +190,7 @@ header nav li a {
 }
 
 #dark-mode-input:checked~.page {
-    background: #121d20;
+    background: #253b41;
     color: #EDD8CE;
     ;
 }
@@ -96,9 +204,9 @@ header nav li a {
     background: #2F4A52;
     border: 2px solid #F8F5EE;
     border-radius: 20px;
-    top: 24px;
-    right: 16px;
-    transition: all 500ms ease-in-out;
+    top: 28px;
+    right: 60px;
+    transition: all 200ms ease-in-out;
     cursor: pointer;
 }
 
@@ -113,15 +221,19 @@ header nav li a {
     transition: all 500ms ease-in-out;
 }
 
-#dark-mode-input:checked~.dark-mode-toggler {
-    background: #EDD8CE;
-    border: 2px solid #121d20;
+
+
+#dark-mode-input:checked~.dark-mode-toggler div {
+    left: 30px;
+}
+
+#dark-mode-input:checked~.dark-mode-toggler .moon {
+    stroke: #2F4A52;
 
 }
 
-#dark-mode-input:checked~.dark-mode-toggler div {
-    background: #121d20;
-    left: 30px;
+#dark-mode-input:checked~.dark-mode-toggler .sun {
+    stroke: #F8F5EE;
 }
 
 .sun {
